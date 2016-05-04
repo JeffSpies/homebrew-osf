@@ -10,7 +10,7 @@ class Osf < Formula
     depends_on "node"
     
     def install
-        ststem "#{HOMEBREW_PREFIX}/bin/npm", "install", "-g bower"
+        system "#{HOMEBREW_PREFIX}/bin/npm", "install", "-g bower"
         system "echo hi"
     end
 end
