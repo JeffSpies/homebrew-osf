@@ -10,9 +10,8 @@ class Osf < Formula
     depends_on "node"
     
     def install
-        system pip, install, virtualenvwrapper
-        system "#{HOMEBREW_PREFIX}/bin/npm", "install", "-g bower"
         system "#{bin}/bin/pip2.7", install, virtualenvwrapper
+        system "#{HOMEBREW_PREFIX}/bin/npm", "install", "-g bower"
         system bower, install
         system echo, hi
     end
