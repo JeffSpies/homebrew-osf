@@ -12,7 +12,7 @@ class Osf < Formula
     def install
         system pip, install, virtualenvwrapper
         system "#{HOMEBREW_PREFIX}/bin/npm", "install", "-g bower"
-        system "#{HOMEBREW_PREFIX}/bin/pip2.7", install, virtualenvwrapper
+        system "#{bin}/bin/pip2.7", install, virtualenvwrapper
         system bower, install
         system echo, hi
     end
